@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/backgroundApp">
+    android:background="@color/backgroundApp"
+    tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvResult"
+        android:id="@+id/resultTv"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:textColor="@color/white"
         android:background="@color/bg_tv_result"
         android:gravity="right|center"
+        android:textColor="@color/white"
         android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal2"
         app:layout_constraintEnd_toStartOf="@+id/Guideline6"
@@ -23,31 +23,31 @@
         tools:text="0" />
 
     <Button
-        android:id="@+id/btnBorrar"
+        android:id="@+id/btnClear"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
         android:backgroundTint="@color/borrar"
         android:text="AC"
-        android:textSize="20sp"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal3"
         app:layout_constraintEnd_toStartOf="@+id/Guideline3"
         app:layout_constraintStart_toStartOf="@+id/Guideline1"
         app:layout_constraintTop_toTopOf="@+id/Guidelhorizontal2" />
 
     <Button
-        android:id="@+id/btnCambioSigno"
+        android:id="@+id/btnRaiz"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:text="+/-"
         android:backgroundTint="@color/operaciones"
+        android:text="√"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal3"
         app:layout_constraintEnd_toStartOf="@+id/Guideline4"
-        app:layout_constraintStart_toEndOf="@+id/btnBorrar"
+        app:layout_constraintStart_toEndOf="@+id/btnClear"
         app:layout_constraintTop_toTopOf="@+id/Guidelhorizontal2" />
 
     <Button
@@ -55,9 +55,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:text="%"
-
         android:backgroundTint="@color/operaciones"
+        android:text="%"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal3"
@@ -66,13 +65,13 @@
         app:layout_constraintTop_toTopOf="@+id/Guidelhorizontal2" />
 
     <Button
-        android:id="@+id/btnDivision"
+        android:id="@+id/btnDivide"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
         android:backgroundTint="@color/operaciones"
-        android:textColor="@color/white"
         android:text="÷"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal3"
         app:layout_constraintEnd_toStartOf="@+id/Guideline6"
@@ -85,13 +84,13 @@
         android:layout_height="0dp"
         android:layout_margin="6dp"
         android:backgroundTint="@color/numeros"
-        android:textColor="@color/white"
         android:text="7"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal4"
         app:layout_constraintEnd_toStartOf="@+id/Guideline3"
         app:layout_constraintStart_toStartOf="@+id/Guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/btnBorrar" />
+        app:layout_constraintTop_toBottomOf="@+id/btnClear" />
 
 
     <Button
@@ -99,14 +98,14 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:text="8"
         android:backgroundTint="@color/numeros"
+        android:text="8"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal4"
         app:layout_constraintEnd_toStartOf="@+id/Guideline4"
         app:layout_constraintStart_toEndOf="@+id/btn7"
-        app:layout_constraintTop_toBottomOf="@+id/btnCambioSigno" />
+        app:layout_constraintTop_toBottomOf="@+id/btnRaiz" />
 
 
     <Button
@@ -114,8 +113,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:text="9"
         android:backgroundTint="@color/numeros"
+        android:text="9"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal4"
@@ -124,12 +123,12 @@
         app:layout_constraintTop_toBottomOf="@+id/btnPorcentaje" />
 
     <Button
-        android:id="@+id/btnMultiplicar"
+        android:id="@+id/btnMultiply"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:text="X"
         android:backgroundTint="@color/operaciones"
+        android:text="x"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal4"
@@ -142,8 +141,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:text="4"
         android:backgroundTint="@color/numeros"
+        android:text="4"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal5"
@@ -157,8 +156,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:text="5"
         android:backgroundTint="@color/numeros"
+        android:text="5"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal5"
@@ -171,8 +170,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:text="6"
         android:backgroundTint="@color/numeros"
+        android:text="6"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal5"
@@ -181,27 +180,27 @@
         app:layout_constraintTop_toBottomOf="@+id/btn9" />
 
     <Button
-        android:id="@+id/btnRestar"
+        android:id="@+id/btnSubtract"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
         android:layout_marginStart="4dp"
-        android:text="-"
         android:backgroundTint="@color/operaciones"
+        android:text="-"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal5"
         app:layout_constraintEnd_toStartOf="@+id/Guideline6"
         app:layout_constraintStart_toStartOf="@+id/Guideline5"
-        app:layout_constraintTop_toBottomOf="@+id/btnMultiplicar" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMultiply" />
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:text="1"
         android:backgroundTint="@color/numeros"
+        android:text="1"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal6"
@@ -215,8 +214,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:text="2"
         android:backgroundTint="@color/numeros"
+        android:text="2"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal6"
@@ -229,8 +228,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:text="3"
         android:backgroundTint="@color/numeros"
+        android:text="3"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal6"
@@ -239,18 +238,18 @@
         app:layout_constraintTop_toTopOf="@+id/Guidelhorizontal5" />
 
     <Button
-        android:id="@+id/btnSuma"
+        android:id="@+id/btnPlus"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:text="+"
         android:backgroundTint="@color/operaciones"
+        android:text="+"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal6"
         app:layout_constraintEnd_toStartOf="@+id/Guideline6"
         app:layout_constraintStart_toEndOf="@+id/btn3"
-        app:layout_constraintTop_toBottomOf="@+id/btnRestar" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSubtract" />
 
 
     <Button
@@ -258,23 +257,22 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:text="0"
         android:backgroundTint="@color/numeros"
+        android:text="0"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal7"
         app:layout_constraintEnd_toStartOf="@+id/Guideline4"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/Guideline1"
         app:layout_constraintTop_toTopOf="@+id/Guidelhorizontal6" />
 
     <Button
-        android:id="@+id/btnComa"
+        android:id="@+id/btnDecimal"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:text=","
         android:backgroundTint="@color/coma"
+        android:text=","
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal7"
@@ -283,14 +281,14 @@
         app:layout_constraintTop_toTopOf="@+id/Guidelhorizontal6" />
 
     <Button
-        android:id="@+id/btnResultado"
+        android:id="@+id/btnEquals"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="6dp"
-        android:text="="
         android:backgroundTint="@color/Resultados"
-        android:textSize="20sp"
+        android:text="="
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/Guidelhorizontal7"
         app:layout_constraintEnd_toStartOf="@+id/Guideline6"
         app:layout_constraintStart_toStartOf="@+id/Guideline5"
@@ -301,93 +299,91 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.04"/>
+        app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.04"/>
+        app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.23"/>
+        app:layout_constraintGuide_percent="0.23" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.46"/>
+        app:layout_constraintGuide_percent="0.46" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.69"/>
+        app:layout_constraintGuide_percent="0.69" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Guideline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.95"/>
+        app:layout_constraintGuide_percent="0.95" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Guidelhorizontal1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.02"/>
+        app:layout_constraintGuide_percent="0.02" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Guidelhorizontal2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.17"/>
+        app:layout_constraintGuide_percent="0.17" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Guidelhorizontal3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.34"/>
+        app:layout_constraintGuide_percent="0.34" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Guidelhorizontal4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.51"/>
+        app:layout_constraintGuide_percent="0.51" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Guidelhorizontal5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.68"/>
+        app:layout_constraintGuide_percent="0.68" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Guidelhorizontal6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.85"/>
+        app:layout_constraintGuide_percent="0.85" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/Guidelhorizontal7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.97"/>
-
-
+        app:layout_constraintGuide_percent="0.97" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
